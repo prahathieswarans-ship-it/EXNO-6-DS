@@ -245,5 +245,59 @@ sns.kdeplot(data=tips, x='total_bill', hue='time', multiple='fill', linewidth=3,
 <img width="779" height="550" alt="image" src="https://github.com/user-attachments/assets/adb4de90-e84e-4ad7-a2c7-1b1e2957b5ce" />
 
 
+df = pd.read_csv("supermarket.csv")
+
+df
+
+<img width="454" height="247" alt="image" src="https://github.com/user-attachments/assets/a9d1b0fe-7121-4dae-af51-b97c6b8353b9" />
+
+
+
+df.head(10)
+
+<img width="751" height="280" alt="image" src="https://github.com/user-attachments/assets/347cd48b-973e-45af-8f77-442f75e3936a" />
+
+sns.kdeplot(data=mart,x="Total")
+
+
+<img width="828" height="542" alt="image" src="https://github.com/user-attachments/assets/e5a97fe2-f098-4df1-9a11-9f2491c58813" />
+
+
+sns.kdeplot(data=mart,x="Unit price")
+
+
+<img width="803" height="542" alt="image" src="https://github.com/user-attachments/assets/a721e088-449c-4d1c-8fa5-edf4019ab928" />
+
+
+sns.kdeplot(data=mart)
+
+<img width="779" height="533" alt="image" src="https://github.com/user-attachments/assets/9fb1d4ed-144d-4fab-9a29-edc26a6e88b4" />
+
+
+
+
+sns.kdeplot(data=mart,x="Total",hue="Payment",multiple="stack")
+
+<img width="828" height="542" alt="image" src="https://github.com/user-attachments/assets/8dc0e4ab-50dd-4801-9a29-92152150b3aa" />
+
+
+
+
+sns.kdeplot(data=mart,x="Total",hue="Payment",multiple="stack",linewidth=5,palette="Dark2",alpha=0.5)
+
+<img width="828" height="542" alt="image" src="https://github.com/user-attachments/assets/8fc6aa34-3ce9-4d85-9658-e514ea12cae2" />
+
+
+
+
+
+data = np.random.randint(1,100,size=(10,10))
+
+hm = sns.heatmap(data)
+
+
+<img width="702" height="511" alt="image" src="https://github.com/user-attachments/assets/54fb4b80-70ed-44ce-8d9e-986ee5fc1393" />
+
+
 # Result:
  Include your result here
