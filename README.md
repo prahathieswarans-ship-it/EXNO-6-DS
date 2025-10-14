@@ -182,6 +182,68 @@ sns.histplot(data = num_var, kde = True)
 
 
 
+import seaborn as sns
+import pandas as pd
+tips = sns.load_dataset('tips')
+sns.boxplot(x=tips['day'], y=tips['total_bill'], hue=tips['sex'])
+
+<img width="765" height="532" alt="image" src="https://github.com/user-attachments/assets/beac4d1a-4fbe-48a5-805e-8a490c2966aa" />
+
+
+
+sns.boxplot(x="day", y="total_bill", hue="smoker", data=tips, linewidth=2, width=0.6, boxprops={"facecolor": "lightblue", "edgecolor": "darkblue"}, whiskerprops={"color": "black", "linestyle": "--", "linewidth": 1.5}, capprops={"color": "black", "linestyle": "--", "linewidth": 1.5})
+
+<img width="765" height="532" alt="image" src="https://github.com/user-attachments/assets/5e27f4ca-a8bf-453b-b4c1-14543c590ec8" />
+
+
+sns.boxplot(x='Pclass', y='Age', data=tit, palette='rainbow')
+plt.title("Age by Passenger Class, Titanic")
+
+<img width="764" height="563" alt="image" src="https://github.com/user-attachments/assets/32492dc8-ceb0-43a6-aff0-b48b3ccc3df6" />
+
+
+sns.violinplot(x="day", y="total_bill", hue="smoker", data=tips, linewidth=2, width=0.6,
+               palette="Set3", inner="quartile")
+# Add labels and title
+plt.xlabel("Day of the Week")
+plt.ylabel("Total Bill")
+plt.title("Violin Plot of Total Bill by Day and Smoker Status")
+
+
+<img width="764" height="563" alt="image" src="https://github.com/user-attachments/assets/a1b906d4-454e-419d-880c-aeadbdb5ba71" />
+
+
+
+import seaborn as sns
+sns.set(style = 'whitegrid')
+tip = sns.load_dataset('tips')
+sns.violinplot(x='day', y='tip', data = tip)
+
+
+<img width="772" height="542" alt="image" src="https://github.com/user-attachments/assets/7a13f1a1-2d5b-4e3c-9885-399c0f067d3a" />
+
+
+import seaborn as sns
+sns.set(style = 'whitegrid')
+tip = sns.load_dataset('tips')
+sns.violinplot(x=tip['total_bill'])
+
+<img width="698" height="542" alt="image" src="https://github.com/user-attachments/assets/4a3a47c4-9cc5-4381-9826-3a5a0b67ea6a" />
+
+
+sns.set(style="whitegrid")
+
+sns.violinplot(x="tip",y="day",data=tip)
+
+<img width="793" height="542" alt="image" src="https://github.com/user-attachments/assets/9c13599f-697a-4af4-b605-c8d805defb50" />
+
+
+
+
+sns.kdeplot(data=tips, x='total_bill', hue='time', multiple='fill', linewidth=3, palette='Set2', alpha=0.8)
+
+<img width="779" height="550" alt="image" src="https://github.com/user-attachments/assets/adb4de90-e84e-4ad7-a2c7-1b1e2957b5ce" />
+
 
 # Result:
  Include your result here
